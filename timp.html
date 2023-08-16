@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Analiza accidentelor rutiere din România</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/accidente/favicon.ico" />
+    <meta name="viewport" content="width=device-width" />
+    <meta
+      name="description"
+      content="Analiza accidentelor rutiere din România"
+    />
+    <meta
+      name="keywords"
+      content="Analiza accidentelor, rutiere din România, alexandra grecu, Alexandra Grecu"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./assets/css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+  </head>
+
+  <body>
+    <!-- < -->
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-xs-12">
+            <div class="logo-area">
+              <a
+                href="index.html"
+                style="
+                  color: inherit;
+                  text-decoration: none;
+                  /* font-weight: bold; */
+                  color: #1a96cf;
+                  font-size: 16px;
+                "
+              >
+                <img
+                  style="height: 35px"
+                  src="./assets/images/accidente/Picture23.png"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 hidden-sm hidden-xs col-xs-12">
+            <ul class="header-menu-center">
+              <li><a href="timp.html" style="
+                color: inherit;
+                text-decoration: none;
+                /* font-weight: bold; */
+                color: #1a96cf;
+                font-size: 16px;
+              ">Timp</a></li>
+              <li>
+                <a
+                href="factor_uman.html"
+              
+                  >Factor uman</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 hidden-sm hidden-xs col-xs-12">
+            <ul class="header-menu-right">
+              <li>
+                <a class="login-butto" href="2021_map.html" target="_blank"
+                  >Hartă 2021</a
+                >
+              </li>
+              <li>
+                <a class="login-butto" href="2022_map.html" target="_blank"
+                  >Hartă 2022</a
+                >
+              <!-- <li><a class="register-button" href="#">Register</a></li> -->
+            </ul>
+          </div>
+          <div class="hidden-md col-xs-12">
+            <!-- Simulate a smartphone / tablet -->
+            <div class="mobile-container">
+              <!-- Top Navigation Menu -->
+              <div class="topnav">
+                <div id="myLinks">
+                  <ul class="header-menu-mobile">
+                    <li><a href="timp.html" style="
+                      color: inherit;
+                      text-decoration: none;
+                      /* font-weight: bold; */
+                      color: #1a96cf;
+                      font-size: 16px;
+                    ">Timp</a></li>
+                   
+                    <li>
+                      <a href="factor_uman.html">Factor uman</a>
+                    </li>
+
+                    <li>
+                      <a class="login-butto" href="2021_map.html" target="_blank"
+                        >Hartă 2021</a
+                      >
+                    </li>
+                    <li>
+                      <a class="login-butto" href="2022_map.html" target="_blank"
+                        >Hartă 2022</a
+                      >
+                    <!-- <li><a class="register-button" href="#">Register</a></li> -->
+                  </ul>
+                </div>
+                <a
+                  href="javascript:void(0);"
+                  class="icon"
+                  onclick="myFunction()"
+                >
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="main-content">
+      <div class="section-1-homepage">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-xs-12">
+              <div class="title-section-1-home">
+                <span>Analiza accidentelor rutiere în funcție de </span>
+                timp<br />
+                <!-- <span>Portofolio</span> -->
+              </div>
+              <div class="text-section-1-home">
+                <p>
+                  În decursul ultimilor doi ani, am desfășurat o analiză vizuală
+                  asupra accidentelor rutiere majore din România, focusându-se
+                  pe aspecte precum perioada anului, zilele săptămânii și
+                  intervalul orar în care au avut loc.
+                </p>
+              </div>
+
+              <div class="text-section-1-home">
+                <p>
+                  Obiectivul nostru este de a investiga impactul temporal asupra
+                  acestor accidente și de a identifica eventuale modele sau
+                  tendințe asociate cu diferite momente ale zilei.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-xs-12 image-container">
+              <img
+                style="max-width: 100%"
+                src="./assets/images/accidente/Picture26.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-2-homepage wow fadeInUp" data-wow-duration="2s" >
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5 col-xs-12">
+              <div class="row">
+                <div class="column">
+                  <div class="buttons graph1">
+                    <button onclick="updateGraph1('count_2021')">2021</button>
+                    <button onclick="updateGraph1('count_2022')">2022</button>
+                  </div>
+                <div id="my_dataviz1"></div>
+              </div>
+              </div>
+            </div>
+            <div class="col-md-1 col-xs-12">
+
+            </div>
+            <div class="col-md-6 col-xs-12">
+              <div class="box-text-general">
+                <div class="title-general-home">
+                  <p class="subtitle-2"><span>Accidentele rutiere majore în funcție de </span> lunile anului</p>
+
+                </div>
+                <div class="text-general-home">
+                  <p>
+                  Analizând accidentele majore din 2021 (cele cu cel puțin un deces sau o rănire gravă), observăm o creștere graduală a numărului de accidente de la luna mai până în august, urmată de o scădere până în decembrie, când numărul accidentelor crește din nou.</p>
+                </br>
+                <p>În 2022, numărul accidentelor majore a crescut progresiv de la luna februarie până în august, urmat de o scădere în septembrie. Cu toate acestea, în octombrie, numărul accidentelor majore a atins vârful cu aproape 500 de incidente.</p>
+                </br>
+        
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-3-homepage wow fadeInUp" data-wow-duration="2s">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-xs-12">
+              <div class="box-text-general">
+                <div class="title-general-home">
+                  Evoluția de-a lungul timpului <span> a accidentelor rutiere</span>
+                </div>
+              </div>
+            </div>
+            <div class="text-general-home">
+              În 2021 și 2022, România a declarat diferite stări de urgență din cauza pandemiei de COVID. Autoritățile au impus, de asemenea, restricții de circulație în timpul nopții, care au fost în vigoare în perioada 10 noiembrie 2021 - 16 mai 2021 și 25 octombrie 2021 - 9 decembrie 2021. Pe grafic, aceste restricții de circulație sunt marcate cu gri, iar în comparație cu perioadele fără aceste restricții, numărul accidentelor majore în aceste perioade a fost mai mic. </div>
+            </div>
+            <div class="row">
+              <div class="column">
+                <div class="col-12">
+                </br>
+                <div class="buttons graph2">
+                  <button onclick="update2(2021)">2021</button>
+                  <button onclick="update2(2022)">2022</button>
+                </div>
+                <footer id="my_dataviz2"></footer>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-2-homepage wow fadeInUp" data-wow-duration="2s" >
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5 col-xs-12">
+              <div class="row">
+                <div class="column">
+                  <div class="buttons graph13">
+                    <button onclick="updateGraph13('count_2021')">2021</button>
+                    <button onclick="updateGraph13('count_2022')">2022</button>
+                  </div>
+                <div id="my_dataviz13"></div>
+              </div>
+              </div>
+            </div>
+            <div class="col-md-1 col-xs-12">
+
+            </div>
+            <div class="col-md-6 col-xs-12">
+              <div class="box-text-general">
+                <div class="title-general-home">
+                  <p class="subtitle-2"><span>Accidentele rutiere majore în funcție de </span> zilele săptămânii</p>
+
+                </div>
+                <div class="text-general-home">
+                  <p>
+                    Ziua de vineri a înregistrat cel mai mare număr de accidente majore atât în 2021, cât și
+                    în 2022. În 2021, ziua de duminică a fost a doua zi cu
+                    cele mai multe incidente rutiere, în timp ce în 2022, sâmbăta a fost a doua zi cu cel mai mare
+                    număr de accidente.   </p>
+                <p> Totodată, putem observa că în ambii ani, distribuția accidentelor rutiere
+                  a fost aproximativ constantă pe parcursul celor 7 zile ale săptămânii. </p>
+                </br>
+        
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-5-homepage wow fadeInUp" data-wow-duration="2s">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-xs-12">
+              <div class="box-text-general">
+                <div class="title-general-home">
+                  Accidentele <span>în funcție de perioada zilei</span>
+                </div>
+                <div class="text-general-home">
+                  Am împărțit ziua în patru perioade: Dimineața, După-amiaza, Seara și Noaptea. În ambii ani, perioada de după-amiază a înregistrat cel mai mare număr de accidente minore, în timp ce perioada de seară a avut cel mai mare număr de accidente majore.                </div>
+                <div class="text-general-home">
+                  Perioadele zilei sunt definite astfel:
+                  <br>
+                  Dimineața: 6:00 am - 11:59 am<br>
+                  După-amiaza: 12:00 pm - 5:59 pm<br>
+                  Seara: 6:00 pm - 11:59 pm<br>
+                  Noaptea: 12:00 am - 5:59 am <br>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 col-xs-12">
+                <div class="buttons graph8">
+                  <button onclick="updateGraph8(2021)">2021</button>
+                  <button onclick="updateGraph8(2022)">2022</button>
+                </div>
+                <div id="my_dataviz8"></div>
+            </div>
+            <div class="col-md-1 col-xs-12">
+
+            </div>
+            
+          </div>
+          <div class="row">
+            <div class="column">
+            <div class="accident-table" id="my_dataviz9"></div>
+            <div><br>Tabel 1: Numărul de accidente în funcție de perioada zilei. (<span style="font-weight: bold;">2021</span>).</div>
+          </div>
+          <br><br><br>
+          <div class="accident-table" id="my_dataviz10"></div>
+          <div><br>Tabel 2: Numărul de accidente în funcție de perioada zilei. (<span style="font-weight: bold;">2022</span>).</div>
+        </div>
+        </div>
+      </div>
+      <div class="section-6-homepage wow fadeInUp" data-wow-duration="2s">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-xs-12">
+              <div class="box-text-general">
+                <div class="title-general-home">
+                  Frecvența accidentelor <span><br> în funcție de zi și oră</span>
+                </div>
+                <div class="text-general-home">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-1 col-xs-12">
+              
+            </div>
+            <div class="col-md-5 col-xs-12">
+              
+              
+            </div>
+            <br>
+          </div>
+          <br>
+          <div class="text-general-home">Harta prezentată mai jos ia în considerare toate accidentele, atât cele majore, cât și cele minore, pentru anii 2021 și 2022. La prima vedere, putem observa o reducere a numărului de accidente în timpul nopții, culorile de pe hartă devenind mai luminoase începând cu ora 6 dimineața. În schimb, lunile de vară (din mai până în septembrie) indică un număr mai mare de accidente pentru ambii ani.
+          </div>
+          <div class="heatmap">
+            <img src="./assets/images/accidente/heatmap.png" alt="">
+
+          </div>
+        </div>
+        </div>
+      </div>
+
+      
+
+    </div>
+
+    <footer class="bg-image_road1">
+      <div class="container">
+        <!-- <div class="row">
+                <div class="col-md-3 col-xs-12">
+                    <a class="logo-area" href="#"> <img src="./assets/images/logo.png" alt="logo Live Green"> </a>
+                </div>
+                <div class="col-md-1 col-xs-12">
+
+                </div>
+                <div class="col-md-3 col-xs-12">
+                    <ul>
+                        <li> <a href="#">Contact us</a> </li>
+                        <li> <a href="#">Page 3</a> </li>
+                        <li> <a href="#">Earn points</a> </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                    <ul>
+                        <li> <a href="#">Get awards</a> </li>
+                        <li> <a href="#">Termeni si conditii</a> </li>
+                        <li> <a href="#">Lorem ipsum</a> </li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-xs-12">
+                    <ul class="social-media">
+                        <li> <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>  </a> </li>
+                        <li> <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </li>
+                        <li> <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a> </li>
+                    </ul>
+                </div>
+            </div> -->
+      </div>
+      <div class="copyright">© 2023 Made by Alexandra Grecu</div>
+    </footer>
+
+    <p id="top">
+      <a
+        href="#top"
+        style="
+          width: 50px;
+          height: 50px;
+          line-height: 50px;
+          text-align: center;
+          border-radius: 100%;
+          color: #fff;
+          background: #23233c;
+          display: inline-block;
+        "
+        ><i class="fa fa-arrow-up" aria-hidden="true"></i
+      ></a>
+    </p>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/wow.min.js"></script>
+    <script src="./assets/js/javascript.js"></script>
+    <script src="./assets/js/graphs-timp.js"></script>
+  </body>
+</html>

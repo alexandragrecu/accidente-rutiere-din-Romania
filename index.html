@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Analiza accidentelor rutiere din România</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/accidente/favicon.ico" />
+    <meta name="viewport" content="width=device-width" />
+    <meta
+      name="description"
+      content="Analiza accidentelor rutiere din România"
+    />
+    <meta
+      name="keywords"
+      content="Analiza accidentelor, rutiere din România, alexandra grecu, Alexandra Grecu"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./assets/css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+  </head>
+
+  <body>
+    <!-- < -->
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-xs-12">
+            <div class="logo-area">
+              <a
+                href="index.html"
+                style="
+                  color: inherit;
+                  text-decoration: none;
+                  /* font-weight: bold; */
+                  color: #1a96cf;
+                  font-size: 16px;
+                "
+              >
+                <img
+                  style="height: 35px"
+                  src="./assets/images/accidente/Picture23.png"
+                  alt=""
+                />
+                <!-- Analiza accidentelor rutiere -->
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 hidden-sm hidden-xs col-xs-12">
+            <ul class="header-menu-center">
+              <li><a href="timp.html">Timp</a></li>
+              <li>
+                <a
+                  href="factor_uman.html"
+                  >Factor uman</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 hidden-sm hidden-xs col-xs-12">
+            <ul class="header-menu-right">
+              <li>
+                <a class="login-butto" href="2021_map.html" target="_blank"
+                  >Hartă 2021</a
+                >
+              </li>
+              <li>
+                <a class="login-butto" href="2022_map.html" target="_blank"
+                  >Hartă 2022</a
+                >
+              </li>
+              <!-- <li><a class="register-button" href="#">Register</a></li> -->
+            </ul>
+          </div>
+          <div class="hidden-md col-xs-12">
+            <!-- Simulate a smartphone / tablet -->
+            <div class="mobile-container">
+              <!-- Top Navigation Menu -->
+              <div class="topnav">
+                <div id="myLinks">
+                  <ul class="header-menu-mobile">
+                    <li><a href="timp.html" >Timp</a></li>
+                  
+                    <li>
+                      <a href="factor_uman.html">Factor uman</a>
+                    </li>
+                  
+                    <li>
+                      <a class="login-button" href="2021_map.html" target="_blank"
+                        >Hartă 2021</a
+                      >
+                    </li>
+                    <li>
+                      <a class="login-button" href="2022_map.html" target="_blank"
+                        >Hartă 2022</a
+                      >
+                    </li>
+                    <!-- <li><a class="register-button" href="#">Register</a></li> -->
+                  </ul>
+                </div>
+                <a
+                  href="javascript:void(0);"
+                  class="icon"
+                  onclick="myFunction()"
+                >
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="main-content">
+      <div class="section-1-homepage">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-xs-12">
+              <div class="title-section-1-home">
+                <span>Analiza accidentelor rutiere din </span> România<br />
+                <!-- <span>Portofolio</span> -->
+              </div>
+              <div class="text-section-1-home">
+                <p>
+                  Accidentele rutiere reprezintă o problemă majoră în România, provocând un număr foarte mare de răniți și decese în fiecare an. Cauzele acestor accidente sunt diverse și includ factori precum conducerea imprudentă, lipsa întreținerii drumurilor și infrastructura deficitară.
+              </div>
+              <div class="text-section-1-home">
+                <p>
+                  Acestă analiză se va focusa pe accidentele de trafic majore,
+                folosind seturi de date ce conțin accidentele din anii <span>2021</span> și
+                <span>2022</span>. 
+              </div>
+            </div>
+            <div class="col-md-6 col-xs-12 image-container">
+              <img style="max-width: 100%" src="./assets/images/accidente/Picture1.png" alt="" />
+          </div>
+          
+          </div>
+          </br>
+            
+            <div class="text-section-1-home">
+            </br>
+              <p>
+                Accidentele rutiere au fost studiate în funcție de 3 factori:
+              </p>
+              <br/>
+            </div>
+            
+            <footer>
+              <div class="image-container content-img">
+                <img
+                class="content-img"
+                style="max-width: 100%; width: 600px"
+                src="./assets/images/accidente/Picture4000.png"
+                alt=""
+              />
+            </br>
+          </div>
+          </footer>
+        </br>
+      </br>
+    </br>
+  </br>
+</br>
+          <div class="section-2-homepage wow fadeInUp" data-wow-duration="2s" >
+            <div class="container">
+              <div class="row">
+                <div class="col-md-5 col-xs-12">
+                  <div class="row">
+                    <div class="column">
+                    <div id="my_dataviz5"></div>
+                  </div>
+                  </div>
+                </div>
+                <div class="col-md-1 col-xs-12">
+    
+                </div>
+                <div class="col-md-6 col-xs-12">
+                  <div class="box-text-general">
+                    <div class="title-general-home">
+                      <p class="subtitle-2">Clasificarea</p><span> accidentelor rutiere</span></a>
+
+                    </div>
+                    <div class="text-general-home">
+                      <p></p>
+                      Am clasificat accidentele rutiere in funcție de numărul de persoane decedate, rănite grav, rănite ușor sau fără răniți.</p>
+                    </br>
+                    <p>Accidentele se împart în două mari categorii: <b>Accidente Majore</b> si <b>Accidente Minore</b>.</p>
+                    </br>
+                      În ultimii doi ani, accidentele majore reprezintă aproximativ <b>18%</b> din accidentele totale. 
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="column">
+                  <div class="buttons graph6">
+                    <button id="button2021">2021</button>
+                    <button id="button2022">2022</button>
+                  </div>
+                <div class="accident-table" id="my_dataviz6"></div>
+                <div><br>Tabel 1: Informații despre fiecare tip de accident.</div>
+                <div class="text-section-1-home">
+                </br>
+                  <p>
+                    <span>Accidente majore (Major accidents)</span> sunt accidentele în care cel puțin o persoană a murit sau a fost grav rănită. </p>
+                    <p>
+                      <span>Accidente minore (Minor accidents)</span> sunt cele în care nimeni nu a fost ucis sau grav rănit.
+                    </p>
+                  </br>
+                    <p>
+                      <span>Accidente fatale (Fatal accidents)</span> sunt accidentele majore în care numărul de decese > 0.
+                    </p>
+                    <p>
+                    <span>Accidente grave (Serious accidents)</span> sunt accidentele majore în care numărul de decese = 0, însă numărul de
+                      persoane grav rănite > 0.
+                    </p>
+                  </br>
+                    <p>
+                      <span>Accidente cu mortalitate ridicată (High Fatal accidents)</span> sunt accidentele în care numărul de persoane ucise +
+  numărul de persoane grav rănite ≥ 3.
+                    </p>
+                    <span>Accidente cu mortalitate scăzută (Low Fatal accidents)</span> sunt accidentele în care numărul de persoane ucise +
+                    numărul de persoane grav rănite < 3.
+                    <p>
+  
+                    </p>
+                  </br>
+                  <p>
+                    <span>Accidente cu gravitate ridicată (High Serious accidents)</span> sunt accidentele în care numărul de persoane grav rănite ≥ 3.
+                  </p>
+                  <p>
+                    <span>Accidente cu gravitate scăzută (Low Serious accidents)</span> sunt accidentele în care numărul de persoane grav rănite < 3.
+                  </p>
+                  
+  
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section-4-homepage wow fadeInUp" data-wow-duration="2s">
+            <div class="container">
+              <div class="row">
+                <div class="column">
+                </br>
+              </br>
+          
+                  <div class="buttons graph3">
+                    <button onclick="updateGraph3('2021')">2021</button>
+                    <button onclick="updateGraph3('2022')">2022</button>
+                  </div>
+                <div id="my_dataviz3"></div>
+              </div>
+                <div class="col-md-6 col-xs-12">
+                  <div class="box-text-general">
+                    <div class="title-general-home">
+                      Accidentele majore în funcție <span>de județ</span>
+                    </div>
+                    <div class="text-general-home">
+                      În timpul anilor 2021 și 2022, cele cinci județe cu cel mai mare număr de accidente rutiere au fost București, Cluj, Iași, Suceava și Maramureș.  </div>
+                    <div class="text-general-home">
+                      Totodată, aceste județe au o densitate mare a populației, fiind unele dintre cele mai mari orașe din România.  </div>
+                    <div class="text-general-home">
+                      Pe de altă parte, județele precum Ilfov, Teleorman, Giurgiu și Tulcea au înregistrat cele mai puține accidente majore.    </div>
+                </div>
+              </div>
+            </div>
+          </div> 
+          <div class="section-3-homepage wow fadeInUp" data-wow-duration="2s">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6 col-xs-12">
+                  <div class="box-text-general">
+                    <div class="title-general-home">
+                      Unde <span>au avut loc accidentele?</span>
+                    </div>
+                    <div class="text-general-home">
+                      Figura din dreapta reprezintă distribuția accidentelor rutiere majore. În ambii ani, accidentele majore au reprezentat aproximativ 18% din totalul accidentelor, iar acestea s-au concentrat în jurul Bucureștiului, Clujului, Iașiului și Constanței.
+                    </div>
+                    <div class="text-general-home">
+                      Deși accidentele în care mor mai mult de 3 persoane (cele cu roșu) sunt mai puțin frecvente în comparație cu celelalte accidente (cele cu portocaliu), ele se concentrează în continuare în anumite grupuri în jurul marilor orașe din România. </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-xs-12">
+                  <div class="row">
+                    <div class="col-12">
+                      <br/>
+                      <br/>
+                      <br/>
+                      <br/>
+                      <div class="buttons graph12">
+                        <button>2021</button>
+                        <button>2022</button>
+                      </div>
+                      <div class="ckeckbox-map">
+                        <input type="checkbox" class="checkbox checkbox-1" id="highFatal" value="HighFatal" checked>
+                        <label for="highFatal" class="custom-checkbox-label"><i class="fas fa-check"></i> High Fatal</label>
+                        <input type="checkbox" class="checkbox checkbox-2" id="lowFatal" value="LowFatal" checked>
+                        <label for="lowFatal" class="custom-checkbox-label"><i class="fas fa-check"></i> Low Fatal</label>        
+                      </div>
+                      <!-- Create an element where the map will take place -->
+                      <svg id="my_dataviz12" width="650" height="550"></svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-4-homepage wow fadeInUp" data-wow-duration="2s">
+            <div class="container">
+              <div class="row">
+                <div class="column">
+                  <div class="buttons graph4">
+                    <button onclick="updateGraph4('2021')">2021</button>
+                    <button onclick="updateGraph4('2022')">2022</button>
+                  </div>
+                <div id="my_dataviz4"></div>
+              </div>
+                <div class="col-md-6 col-xs-12">
+                  <div class="box-text-general buttons-container">
+                    <div class="title-general-home">
+                      Accidentele rutiere majore <span>în funcție de regiunea țării</span>
+                    </div>
+                    <div class="text-general-home">
+                      Pe parcursul ambilor ani, regiunile de Nord-Vest și Centru au raportat cel mai mare număr de accidente majore. În contrast, regiunea de Vest a țării a înregistrat cel mai mic număr de accidente majore, cu aproape 400 de incidente raportate în ambii ani.  </div>
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>       
+          
+              </div>
+            </footer>
+
+
+        </div>
+      </div>
+      
+        </div>
+      </div>
+      <footer class="bg-image_road1">
+     
+        
+        <div class="copyright">
+          © 2023 Made by Alexandra Grecu
+        </div>
+    </footer>
+    </div>
+  
+
+    <p id="top">
+      <a
+        href="#top"
+        style="
+          width: 50px;
+          height: 50px;
+          line-height: 50px;
+          text-align: center;
+          border-radius: 100%;
+          color: #fff;
+          background: #23233c;
+          display: inline-block;
+        "
+        ><i class="fa fa-arrow-up" aria-hidden="true"></i
+      ></a>
+    </p>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/wow.min.js"></script>
+    <script src="./assets/js/javascript.js"></script>
+    <script src="./assets/js/graphs.js"></script>
+  </body>
+</html>

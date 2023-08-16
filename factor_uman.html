@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Analiza accidentelor rutiere din România</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/accidente/favicon.ico" />
+    <meta name="viewport" content="width=device-width" />
+    <meta
+      name="description"
+      content="Analiza accidentelor rutiere din România"
+    />
+    <meta
+      name="keywords"
+      content="Analiza accidentelor, rutiere din România, alexandra grecu, Alexandra Grecu"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./assets/css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+  </head>
+
+  <body>
+    <!-- < -->
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-xs-12">
+            <div class="logo-area">
+              <a
+                href="index.html"
+                style="
+                  color: inherit;
+                  text-decoration: none;
+                  /* font-weight: bold; */
+                  color: #1a96cf;
+                  font-size: 16px;
+                "
+              >
+                <img
+                  style="height: 35px"
+                  src="./assets/images/accidente/Picture23.png"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 hidden-sm hidden-xs col-xs-12">
+            <ul class="header-menu-center">
+              <li><a href="timp.html">Timp</a></li>
+              <li>
+                <a
+                href="factor_uman.html" style="
+                color: inherit;
+                text-decoration: none;
+                /* font-weight: bold; */
+                color: #1a96cf;
+                font-size: 16px;
+              "
+                  target="_blank"
+                  >Factor uman</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 hidden-sm hidden-xs col-xs-12">
+            <ul class="header-menu-right">
+                <li>
+                    <a class="login-butto" href="2021_map.html" target="_blank"
+                      >Hartă 2021</a
+                    >
+                  </li>
+                  <li>
+                    <a class="login-butto" href="2022_map.html" target="_blank"
+                      >Hartă 2022</a
+                    >
+              <!-- <li><a class="register-button" href="#">Register</a></li> -->
+            </ul>
+          </div>
+          <div class="hidden-md col-xs-12">
+            <!-- Simulate a smartphone / tablet -->
+            <div class="mobile-container">
+              <!-- Top Navigation Menu -->
+              <div class="topnav">
+                <div id="myLinks">
+                  <ul class="header-menu-mobile">
+                    <li><a href="timp.html">Timp</a></li>
+                   
+                    <li>
+                      <a href="factor_uman.html" style="
+                      color: inherit;
+                      text-decoration: none;
+                      /* font-weight: bold; */
+                      color: #1a96cf;
+                      font-size: 16px;
+                    ">Factor uman</a>
+                    </li>
+
+                    <li>
+                        <a class="login-butto" href="2021_map.html" target="_blank"
+                          >Hartă 2021</a
+                        >
+                      </li>
+                      <li>
+                        <a class="login-butto" href="2022_map.html" target="_blank"
+                          >Hartă 2022</a
+                        >
+                    <!-- <li><a class="register-button" href="#">Register</a></li> -->
+                  </ul>
+                </div>
+                <a
+                  href="javascript:void(0);"
+                  class="icon"
+                  onclick="myFunction()"
+                >
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="main-content">
+      <div class="section-1-homepage">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-xs-12">
+              <div class="title-section-1-home">
+                <span>Analiza accidentelor majore</span>
+                în funcție de factorul uman<br />
+                <!-- <span>Portofolio</span> -->
+              </div>
+              <div class="text-section-1-home">
+                <p>
+                  
+Comportamentul uman joacă un rol esențial în accidentele rutiere majore. Neglijența, viteza excesivă, conducerea sub influența alcoolului sau a drogurilor, utilizarea telefonului mobil în timpul condusului și neacordarea priorității sunt doar câteva exemple de comportamente riscante care pot contribui la producerea accidentelor grave.  </p>
+              </div>
+
+              <div class="text-section-1-home">
+                <p>
+                    Educația și conștientizarea cu privire la regulile de circulație, siguranța rutieră și consecințele acțiunilor imprudente sunt esențiale pentru reducerea numărului de accidente majore.
+               
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-xs-12 image-container">
+              <img
+                style="max-width: 100%"
+                src="./assets/images/accidente/Picture23.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-2-homepage wow fadeInUp" data-wow-duration="2s" >
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5 col-xs-12">
+              <div class="row">
+                <div class="column">
+                    <div class="buttons graph7">
+                        <button onclick="updateGraph7(2021)">2021</button>
+                        <button onclick="updateGraph7(2022)">2022</button>
+                      </div>
+                      <div id="my_dataviz7"></div>
+                    </div>
+              </div>
+            </div>
+            <div class="col-md-1 col-xs-12">
+
+            </div>
+            <div class="col-md-6 col-xs-12">
+              <div class="box-text-general">
+                <div class="title-general-home">
+                    Cauzele principale ale <span> accidentelor rutiere majore</span>
+                  </div>
+                  <div class="text-general-home">
+                      De-a lungul ultimilor doi ani, principalele 3 cauze ale accidentelor rutiere majore
+                      rămân constante (cu cateva variații în procente). Viteza neadaptată la condițiile de drum (viteză neregulamentară) este
+                      cauza principală cea mai frecventă, reprezentând 15.57% din accidentele rutiere majore din
+                      2021 și 16.09% în 2022.    </div>
+                      <div class="text-general-home">
+                          Cauzele 2 și 3 sunt îngrijorătoare fiindcă fac referire la comportamentul pietonilor în
+  trafic. În jur de 12-13% din accidentele rutiere majore s-au întâmplat din cauze ce implică pietoni.  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <div class="column">
+              <div class="accident-table" id="my_dataviz9"></div>
+              <div><br>Tabel 1: Informații despre cele mai frecvente cauze principale ale accidentelor rutiere majore (ce implică comportamentul uman). (<span style="font-weight: bold;">2021</span>).</div>
+            </div>
+            <br><br><br>
+            <div class="accident-table" id="my_dataviz10"></div>
+            <div><br>Tabel 2: Informații despre cele mai frecvente cauze principale ale accidentelor rutiere majore (ce implică comportamentul uman). (<span style="font-weight: bold;">2022</span>).</div>
+          </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      <div class="section-5-homepage wow fadeInUp" data-wow-duration="2s">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-xs-12">
+              <div class="box-text-general">
+                <div class="title-general-home">
+                  Cum s-au produs <span>accidentele rutiere majore</span>
+                </div>
+                <div class="text-general-home">
+                    Principalul mod în care accidentele majore se produc este prin lovirea pietonilor. În
+2021, <b>32.41%</b> (iar în 2022, <b>32.12%</b>) dintre accidentele majore s-au produs lovind pietoni,
+ceea ce subliniază cât de important este ca atât pietonii cât și șoferii să fie atenți în trafic.          </div>
+                <div class="text-general-home">
+                    Sunt variații mici de procente de la un an la altul, dar se poate vedea ca primele 5
+                    moduri în care se produc accidentele majore rămân aceleași. 
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 col-xs-12">
+                <div class="buttons graph11">
+                    <button onclick="updateGraph11(2021)">2021</button>
+                    <button onclick="updateGraph11(2022)">2022</button>
+                  </div>
+                <div id="my_dataviz11"></div>
+            </div>
+            <div class="col-md-1 col-xs-12">
+
+            </div>
+            
+          </div>
+          <div class="row">
+            <div class="column">
+            <!-- <div class="accident-table" id="my_dataviz9"></div> -->
+            <div class="accident-table" id="my_dataviz13"></div>
+            <div><br>Tabel 3: Informații despre cele mai frecvente 10 moduri în care s-au produs accidentele majore. (<span style="font-weight: bold;">2021</span>).</div>
+          </div>
+          <br><br><br>
+          <!-- <div class="accident-table" id="my_dataviz10"></div> -->
+          
+          <div class="accident-table" id="my_dataviz14"></div>
+          <div><br>Tabel 4: Informații despre cele mai frecvente 10 moduri în care s-au produs accidentele majore. (<span style="font-weight: bold;">2022</span>).</div>
+        </div>
+        </div>
+      </div>
+     
+      </div>
+
+      
+
+    </div>
+
+    <footer class="bg-image_road1">
+      <div class="container">
+        <!-- <div class="row">
+                <div class="col-md-3 col-xs-12">
+                    <a class="logo-area" href="#"> <img src="./assets/images/logo.png" alt="logo Live Green"> </a>
+                </div>
+                <div class="col-md-1 col-xs-12">
+
+                </div>
+                <div class="col-md-3 col-xs-12">
+                    <ul>
+                        <li> <a href="#">Contact us</a> </li>
+                        <li> <a href="#">Page 3</a> </li>
+                        <li> <a href="#">Earn points</a> </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                    <ul>
+                        <li> <a href="#">Get awards</a> </li>
+                        <li> <a href="#">Termeni si conditii</a> </li>
+                        <li> <a href="#">Lorem ipsum</a> </li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-xs-12">
+                    <ul class="social-media">
+                        <li> <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>  </a> </li>
+                        <li> <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </li>
+                        <li> <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a> </li>
+                    </ul>
+                </div>
+            </div> -->
+      </div>
+      <div class="copyright">© 2023 Made by Alexandra Grecu</div>
+    </footer>
+
+    <p id="top">
+      <a
+        href="#top"
+        style="
+          width: 50px;
+          height: 50px;
+          line-height: 50px;
+          text-align: center;
+          border-radius: 100%;
+          color: #fff;
+          background: #23233c;
+          display: inline-block;
+        "
+        ><i class="fa fa-arrow-up" aria-hidden="true"></i
+      ></a>
+    </p>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/wow.min.js"></script>
+    <script src="./assets/js/javascript.js"></script>
+    <script src="./assets/js/graphs-factor_uman.js"></script>
+  </body>
+</html>
